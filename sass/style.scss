@@ -26,8 +26,17 @@ section {
 }
 
 .btn-dark {
-	background-color: $secondary-color;
-	color: $color-text;
+	@include boton ($secondary-color, $color-text);
+	:hover {
+		@include boton ($primary-color-light, $secondary-color);
+	}
+}
+
+.btn-light {
+	@include boton ($primary-color, $secondary-color);
+	:hover {
+		@include boton ($primary-color-light, $secondary-color);
+	}
 }
 
 
@@ -40,6 +49,10 @@ nav {
 		background-color:$primary-color-light;
 		color: $secondary-color;
 	}	
+	img {
+		width: 55px;
+		margin-top: 5px !important;
+	}
 }
 
 /*===== About =====*/
@@ -48,26 +61,40 @@ nav {
 	@include titulos (800, $secondary-color, Oswald, uppercase, 5rem);
 }
 
-.btn-floating {
-	background-color: $secondary-color;
-	:hover {
-		background-color: $primary-color-light;
-		color: $secondary-color;
-	}
-}
-
 .icon-box {
 	margin-top: 3%;
 }
 
+.call {
+	padding:5px;
+	@media only screen and (max-width: 500px) {
+	  .symbols {
+		display: inline-block;
+		position: relative;
+		bottom:10px;
+		font-size: 1rem;
+		line-height: 4rem;
+		}
+
+		.keys {
+			@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
+			line-height: 2rem;
+		}
+	}
+ 
+}
+
 .symbols {
 	display: inline-block;
-	margin: 3% 2%;
+	position: relative;
+	bottom:10px;
 	font-size: 1.2rem;
+	line-height: 4rem;
 }
 
 .keys {
 	@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
+	line-height: 4rem;
 }
 
 .sub-title {
