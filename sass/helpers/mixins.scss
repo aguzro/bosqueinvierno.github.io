@@ -18,3 +18,9 @@
 	text-transform: $transform;
 	font-size: $size;
 }
+
+/* ===== Botones ===== */
+@mixin boton ($bc, $c) {
+	background-color: $bc;
+	color: $c;
+}
