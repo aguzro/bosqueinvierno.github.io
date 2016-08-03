@@ -1,0 +1,122 @@
+@import "https://fonts.googleapis.com/css?family=Lato|Oswald";
+/*===== Color =====*/
+/* ===== Padding de Secciones ===== */
+/*===== Textos =====*/
+/* ===== Botones ===== */
+section {
+  padding-top: 5%;
+  padding-bottom: 7%; }
+
+.green-section {
+  background-color: #3CB09B; }
+  .green-section .title {
+    font-weight: 700;
+    color: #2a282b;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 3rem; }
+
+.black-section {
+  background-color: #2a282b; }
+  .black-section .title {
+    font-weight: 700;
+    color: #d1d1d1;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 3rem; }
+
+.text-section-dark {
+  font-size: 1.5rem;
+  color: #d1d1d1;
+  font-family: Lato; }
+
+.text-section-light {
+  font-size: 1.5rem;
+  color: #2a282b;
+  font-family: Lato; }
+
+.btn-dark {
+  background-color: #2a282b;
+  color: #d1d1d1; }
+  .btn-dark :hover {
+    background-color: #A2DCDE;
+    color: #2a282b; }
+
+.btn-light {
+  background-color: #3CB09B;
+  color: #2a282b; }
+  .btn-light :hover {
+    background-color: #A2DCDE;
+    color: #2a282b; }
+
+/*===== Nav =====*/
+nav {
+  background-color: #2a282b !important; }
+  nav li:hover {
+    background-color: #A2DCDE;
+    color: #2a282b; }
+  nav img {
+    width: 55px;
+    margin-top: 5px !important; }
+
+/*===== About =====*/
+.about-title {
+  font-weight: 800;
+  color: #2a282b;
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 5rem; }
+
+.icon-box {
+  margin-top: 3%; }
+
+.call {
+  padding: 5px; }
+  @media only screen and (max-width: 500px) {
+    .call .symbols {
+      display: inline-block;
+      position: relative;
+      bottom: 10px;
+      font-size: 1rem;
+      line-height: 4rem; }
+    .call .keys {
+      font-weight: 300;
+      color: #2a282b;
+      font-family: Lato;
+      text-transform: uppercase;
+      font-size: 4rem;
+      line-height: 2rem; } }
+
+.symbols {
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 4rem; }
+
+.keys {
+  font-weight: 300;
+  color: #2a282b;
+  font-family: Lato;
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 4rem; }
+
+.sub-title {
+  font-weight: 300;
+  color: #2a282b;
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+/*===== Footer =====*/
+footer {
+  margin-top: 0 !important;
+  background-color: #2a282b !important; }
+
+code {
+  background-color: #A2DCDE;
+  color: #2a282b;
+  padding: 2% 2%; }
+
+/*# sourceMappingURL=main.css.map */

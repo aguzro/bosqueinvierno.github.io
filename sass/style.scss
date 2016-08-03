@@ -1,6 +1,5 @@
 // Generales
 
-/*=== Secciones ===*/
 section {
 	@include pd-s (5%, 7%);
 }
@@ -26,6 +25,12 @@ section {
 	@include parrafos (1.5rem, $secondary-color, Lato);
 }
 
+.btn-dark {
+	background-color: $secondary-color;
+	color: $color-text;
+}
+
+
 // Por sección
 
 /*===== Nav =====*/
@@ -33,6 +38,7 @@ nav {
 	background-color: $secondary-color !important;
 	& li:hover {
 		background-color:$primary-color-light;
+		color: $secondary-color;
 	}	
 }
 
@@ -64,7 +70,7 @@ nav {
 	@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
 }
 
-h4 {
+.sub-title {
 	@include titulos (300, $secondary-color, Oswald, uppercase, 1.5rem);
 }
 
@@ -79,4 +85,5 @@ footer {
 code {
 	background-color: $primary-color-light;
 	color: $secondary-color;
+	padding: 2% 2%;
 }
