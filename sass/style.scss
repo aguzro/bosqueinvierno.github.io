@@ -1,37 +1,67 @@
 // Generales
-/*=== Secciones ===*/
-.rose-section {
-	background-color: $primary-color;
-	h1 {
-		@include titulos (700, $secondary-color, Oswald, uppercase, 3rem);
-	}
-}
-.black-section {
-	background-color: $secondary-color;
-	h1 {
-		@include titulos (700, $color-text, Oswald, uppercase, 3rem);
-	}
-}
 
+/*=== Secciones ===*/
 section {
 	@include pd-s (5%, 7%);
-	
 }
 
+.green-section {
+		background-color: $primary-color;
+		.title {
+			@include titulos (700, $secondary-color, Oswald, uppercase, 3rem);
+		}
+	}
+	.black-section {
+		background-color: $secondary-color;
+		.title {
+			@include titulos (700, $color-text, Oswald, uppercase, 3rem);
+		}
+	}
+
+.text-section-dark {
+	@include parrafos (1.5rem, $color-text, Lato);
+}
+
+.text-section-light {
+	@include parrafos (1.5rem, $secondary-color, Lato);
+}
 
 // Por sección
 
 /*===== Nav =====*/
 nav {
 	background-color: $secondary-color !important;
+	& li:hover {
+		background-color:$primary-color-light;
+	}	
 }
 
 /*===== About =====*/
+
+.about-title {
+	@include titulos (800, $secondary-color, Oswald, uppercase, 5rem);
+}
+
 .btn-floating {
 	background-color: $secondary-color;
 	:hover {
 		background-color: $primary-color-light;
+		color: $secondary-color;
 	}
+}
+
+.icon-box {
+	margin-top: 3%;
+}
+
+.symbols {
+	display: inline-block;
+	margin: 3% 2%;
+	font-size: 1.2rem;
+}
+
+.keys {
+	@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
 }
 
 h4 {
