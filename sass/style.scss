@@ -1,0 +1,47 @@
+// Generales
+/*=== Secciones ===*/
+.rose-section {
+	background-color: $primary-color;
+	h1 {
+		@include titulos (700, $secondary-color, Oswald, uppercase, 3rem);
+	}
+}
+.black-section {
+	background-color: $secondary-color;
+	h1 {
+		@include titulos (700, $color-text, Oswald, uppercase, 3rem);
+	}
+}
+
+section {
+	@include pd-s (5%, 7%);
+	
+}
+
+
+// Por sección
+
+/*===== Nav =====*/
+nav {
+	background-color: $secondary-color !important;
+}
+
+/*===== About =====*/
+.btn-floating {
+	background-color: $secondary-color;
+	:hover {
+		background-color: $primary-color-light;
+	}
+}
+
+h4 {
+	@include titulos (300, $secondary-color, Oswald, uppercase, 1.5rem);
+}
+
+
+
+/*===== Footer =====*/
+footer {
+	margin-top: 0 !important;
+	background-color: $secondary-color !important;
+}
