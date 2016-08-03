@@ -75,3 +75,8 @@ footer {
 	margin-top: 0 !important;
 	background-color: $secondary-color !important;
 }
+
+code {
+	background-color: $primary-color-light;
+	color: $secondary-color;
+}
