@@ -1,41 +1,43 @@
 // Generales
 
 section {
-	@include pd-s (5%, 7%);
+	@include pd-s (5%, 5%);
 }
 
 .green-section {
 		background-color: $primary-color;
 		.title {
 			@include titulos (700, $secondary-color, Oswald, uppercase, 3rem);
+			margin-bottom: 2%;
 		}
 	}
-	.black-section {
-		background-color: $secondary-color;
-		.title {
-			@include titulos (700, $color-text, Oswald, uppercase, 3rem);
-		}
+.black-section {
+	background-color: $secondary-color;
+	.title {
+		@include titulos (700, $color-text, Oswald, uppercase, 3rem);
+		margin-bottom: 2%;
 	}
+}
 
 .text-section-dark {
-	@include parrafos (1.5rem, $color-text, Lato);
+	@include parrafos (2rem, $color-text, Lato);
 }
 
 .text-section-light {
-	@include parrafos (1.5rem, $secondary-color, Lato);
+	@include parrafos (2rem, $secondary-color, Lato);
 }
 
 .btn-dark {
-	@include boton ($secondary-color, $color-text);
+	@include boton ($secondary-color, $color-text, 0 1%);
 	:hover {
-		@include boton ($primary-color-light, $secondary-color);
+		@include boton ($primary-color-light, $secondary-color, 0 1%);
 	}
 }
 
 .btn-light {
-	@include boton ($primary-color, $secondary-color);
+	@include boton ($primary-color, $secondary-color, 0 1%);
 	:hover {
-		@include boton ($primary-color-light, $secondary-color);
+		@include boton ($primary-color-light, $secondary-color, 0 1%);
 	}
 }
 
@@ -53,64 +55,89 @@ nav {
 		width: 55px;
 		margin-top: 5px !important;
 	}
+	.side-nav {
+		opacity: 0.9;
+		filter: alpha(opacity=90); /* For IE8 and earlier */
+	}
 }
 
 /*===== About =====*/
 
-.about-title {
-	@include titulos (800, $secondary-color, Oswald, uppercase, 5rem);
-}
-
-.icon-box {
-	margin-top: 3%;
-}
-
-.call {
-	padding:5px;
-	@media only screen and (max-width: 500px) {
-	  .symbols {
+#about {
+	.about-title {
+		@include titulos (800, $secondary-color, Oswald, uppercase, 5rem);
+	}
+	.icon-box {
+		margin-top: 3%;
+	}
+	code {
+		@include codes ($secondary-color, $color-text, 2%);
+		font-size: 2rem;
+		margin: 3% 0;
+	}
+	.call {
+		padding:5px;
+		@media only screen and (max-width: 500px) {
+		  .symbols {
+			display: inline-block;
+			position: relative;
+			bottom:10px;
+			font-size: 1rem;
+			line-height: 4rem;
+			}
+			.keys {
+				@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
+				line-height: 2rem;
+			}
+		}
+	}
+	.symbols {
 		display: inline-block;
 		position: relative;
 		bottom:10px;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		line-height: 4rem;
-		}
+	}
+	.keys {
+		@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
+		line-height: 4rem;
+	}
+	.sub-title {
+		@include titulos (300, $secondary-color, Oswald, uppercase, 1.5rem);
+	}
+}
 
-		.keys {
-			@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
-			line-height: 2rem;
+/*===== Habilidades =====*/
+#skills {
+	.title-list {
+		@include titulos (300, $color-text, Oswald, uppercase, 2rem);
+	}
+	li {
+		margin: 3%;
+		code {
+			@include codes ($primary-color-light, $secondary-color, 2%);
 		}
 	}
- 
-}
-
-.symbols {
-	display: inline-block;
-	position: relative;
-	bottom:10px;
-	font-size: 1.2rem;
-	line-height: 4rem;
-}
-
-.keys {
-	@include titulos (300, $secondary-color, Lato, uppercase, 4rem);
-	line-height: 4rem;
-}
-
-.sub-title {
-	@include titulos (300, $secondary-color, Oswald, uppercase, 1.5rem);
 }
 
 
+
+/*===== Trabajos =====*/
+#works {
+	code {
+		@include codes ($secondary-color, $color-text, 2%)
+	}
+}
 
 /*===== Footer =====*/
 footer {
 	margin-top: 0 !important;
 	background-color: $secondary-color !important;
-}
-
-code {
-	background-color: $primary-color-light;
-	color: $secondary-color;
-	padding: 2% 2%;
+	code {
+		@include codes ($primary-color-light, $secondary-color, 2%);
+		font-size: 1.1rem;
+		}
+	.btn-floating {
+		display: inline-block;
+	}	
 }

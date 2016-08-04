@@ -3,9 +3,10 @@
 /* ===== Padding de Secciones ===== */
 /*===== Textos =====*/
 /* ===== Botones ===== */
+/*===== Code Style =====*/
 section {
   padding-top: 5%;
-  padding-bottom: 7%; }
+  padding-bottom: 5%; }
 
 .green-section {
   background-color: #3CB09B; }
@@ -14,7 +15,8 @@ section {
     color: #2a282b;
     font-family: Oswald;
     text-transform: uppercase;
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-bottom: 2%; }
 
 .black-section {
   background-color: #2a282b; }
@@ -23,31 +25,36 @@ section {
     color: #d1d1d1;
     font-family: Oswald;
     text-transform: uppercase;
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin-bottom: 2%; }
 
 .text-section-dark {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #d1d1d1;
   font-family: Lato; }
 
 .text-section-light {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #2a282b;
   font-family: Lato; }
 
 .btn-dark {
   background-color: #2a282b;
-  color: #d1d1d1; }
+  color: #d1d1d1;
+  margin: 0 1%; }
   .btn-dark :hover {
     background-color: #A2DCDE;
-    color: #2a282b; }
+    color: #2a282b;
+    margin: 0 1%; }
 
 .btn-light {
   background-color: #3CB09B;
-  color: #2a282b; }
+  color: #2a282b;
+  margin: 0 1%; }
   .btn-light :hover {
     background-color: #A2DCDE;
-    color: #2a282b; }
+    color: #2a282b;
+    margin: 0 1%; }
 
 /*===== Nav =====*/
 nav {
@@ -58,65 +65,92 @@ nav {
   nav img {
     width: 55px;
     margin-top: 5px !important; }
+  nav .side-nav {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    /* For IE8 and earlier */ }
 
 /*===== About =====*/
-.about-title {
+#about .about-title {
   font-weight: 800;
   color: #2a282b;
   font-family: Oswald;
   text-transform: uppercase;
   font-size: 5rem; }
-
-.icon-box {
+#about .icon-box {
   margin-top: 3%; }
-
-.call {
+#about code {
+  background-color: #2a282b;
+  color: #d1d1d1;
+  padding: 2%;
+  font-size: 2rem;
+  margin: 3% 0; }
+#about .call {
   padding: 5px; }
   @media only screen and (max-width: 500px) {
-    .call .symbols {
+    #about .call .symbols {
       display: inline-block;
       position: relative;
       bottom: 10px;
       font-size: 1rem;
       line-height: 4rem; }
-    .call .keys {
+    #about .call .keys {
       font-weight: 300;
       color: #2a282b;
       font-family: Lato;
       text-transform: uppercase;
       font-size: 4rem;
       line-height: 2rem; } }
-
-.symbols {
+#about .symbols {
   display: inline-block;
   position: relative;
   bottom: 10px;
   font-size: 1.2rem;
   line-height: 4rem; }
-
-.keys {
+#about .keys {
   font-weight: 300;
   color: #2a282b;
   font-family: Lato;
   text-transform: uppercase;
   font-size: 4rem;
   line-height: 4rem; }
-
-.sub-title {
+#about .sub-title {
   font-weight: 300;
   color: #2a282b;
   font-family: Oswald;
   text-transform: uppercase;
   font-size: 1.5rem; }
 
+/*===== Habilidades =====*/
+#skills .title-list {
+  font-weight: 300;
+  color: #d1d1d1;
+  font-family: Oswald;
+  text-transform: uppercase;
+  font-size: 2rem; }
+#skills li {
+  margin: 3%; }
+  #skills li code {
+    background-color: #A2DCDE;
+    color: #2a282b;
+    padding: 2%; }
+
+/*===== Trabajos =====*/
+#works code {
+  background-color: #2a282b;
+  color: #d1d1d1;
+  padding: 2%; }
+
 /*===== Footer =====*/
 footer {
   margin-top: 0 !important;
   background-color: #2a282b !important; }
-
-code {
-  background-color: #A2DCDE;
-  color: #2a282b;
-  padding: 2% 2%; }
+  footer code {
+    background-color: #A2DCDE;
+    color: #2a282b;
+    padding: 2%;
+    font-size: 1.1rem; }
+  footer .btn-floating {
+    display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

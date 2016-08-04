@@ -12,30 +12,20 @@ $(document).ready(function(){
 */
 
 
-/* ===== Modal ===== */
-
-// Llama al modal
-//var modal = document.getElementById('myModal');
-
-// Llama al botón que abre el modal
-//var btn = document.getElementById("myBtn");
-
-// Llama al span que cierra el modal
-//var span = document.getElementsByClassName("close")[0];
-
-// Cuando hace click en el botón, se abre el modal 
-//btn.onclick = function() {
-//    modal.style.display = "block";
-//}
-
-// cuando se hace click en el span (x), cierra el modal
-//span.onclick = function() {
-//    modal.style.display = "none";
-//}
-
-// Cuando se hace click en cualquier parte fuera del modal, lo cierra
-//window.onclick = function(event) {
-//    if (event.target == modal) {
-//        modal.style.display = "none";
-//    }
-//}
+/*===== Smooth Scrolling =====*/
+$(document).ready(function(){
+  $(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});   
+});

@@ -1,7 +1,7 @@
 /* ===== Padding de Secciones ===== */
-@mixin pd-s ($top, $bottom) {
-	padding-top: $top;
-	padding-bottom: $bottom;
+@mixin pd-s ($ptop, $pbottom) {
+	padding-top: $ptop;
+	padding-bottom: $pbottom;
 }
 
 /*===== Textos =====*/
@@ -20,7 +20,15 @@
 }
 
 /* ===== Botones ===== */
-@mixin boton ($bc, $c) {
+@mixin boton ($bc, $c, $mg) {
 	background-color: $bc;
 	color: $c;
+	margin: $mg;
+}
+
+/*===== Code Style =====*/
+@mixin codes ($bc, $c, $pd) {
+	background-color: $bc;
+	color: $c;
+	padding: $pd;
 }
